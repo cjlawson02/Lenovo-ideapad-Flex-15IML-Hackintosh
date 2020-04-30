@@ -12,6 +12,36 @@
 			<array>
 				<dict>
 					<key>Comment</key>
+					<string>TIMR IRQ 0 Patch</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>IgEAeQA=</data>
+					<key>Replace</key>
+					<data>IgAAeQA=</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>RTC IRQ 8 Patch</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>IgABeQA=</data>
+					<key>Replace</key>
+					<data>IgAAeQA=</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>HPET _CRS to XCRS Rename</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>X0NSUwigGQ==</data>
+					<key>Replace</key>
+					<data>WENSUwigGQ==</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
 					<string>change HECI to IMEI</string>
 					<key>Disabled</key>
 					<false/>
@@ -84,8 +114,12 @@
 		<string>LastBootedVolume</string>
 		<key>NeverHibernate</key>
 		<true/>
+		<key>NoEarlyProgress</key>
+		<false/>
 		<key>Timeout</key>
-		<integer>5</integer>
+		<integer>3</integer>
+		<key>XMPDetection</key>
+		<false/>
 	</dict>
 	<key>Devices</key>
 	<dict>
@@ -94,10 +128,12 @@
 			<key>AFGLowPowerState</key>
 			<false/>
 			<key>Inject</key>
-			<integer>0</integer>
+			<string>NO</string>
 			<key>ResetHDA</key>
 			<true/>
 		</dict>
+		<key>HDMIInjection</key>
+		<false/>
 		<key>Properties</key>
 		<dict>
 			<key>PciRoot(0x0)/Pci(0x2,0x0)</key>
@@ -106,30 +142,8 @@
 				<data>AACbPg==</data>
 				<key>device-id</key>
 				<data>mz4AAA==</data>
-				<key>disable-external-gpu</key>
-				<data>AQAAAA==</data>
-				<key>enable-hdmi20</key>
-				<data>AQAAAA==</data>
-				<key>enable-lspcon-support</key>
-				<data>AQAAAA==</data>
-				<key>framebuffer-con1-busid</key>
-				<data>AQAAAA==</data>
-				<key>framebuffer-con1-enable</key>
-				<data>AQAAAA==</data>
-				<key>framebuffer-con1-has-lspcon</key>
-				<data>AQAAAA==</data>
-				<key>framebuffer-con1-preferred-lspcon-mode</key>
-				<data>AQAAAA==</data>
-				<key>framebuffer-con1-type</key>
-				<data>AAgAAA==</data>
-				<key>framebuffer-fbmem</key>
-				<data>AACQAA==</data>
-				<key>framebuffer-patch-enable</key>
-				<data>AQAAAA==</data>
-				<key>framebuffer-stolenmem</key>
-				<data>AAAwAQ==</data>
 				<key>model</key>
-				<string>Intel UHD Graphics 630 (Mobile)</string>
+				<string>Intel UHD Graphics 620 (Mobile)</string>
 			</dict>
 		</dict>
 		<key>USB</key>
@@ -140,9 +154,11 @@
 			<true/>
 			<key>Inject</key>
 			<true/>
+			<key>NameEH00</key>
+			<false/>
 		</dict>
 		<key>UseIntelHDMI</key>
-		<true/>
+		<false/>
 	</dict>
 	<key>DisableDrivers</key>
 	<array>
@@ -265,6 +281,11 @@
 		<string>Part Component</string>
 		<key>Manufacturer</key>
 		<string>Apple Inc.</string>
+		<key>Memory</key>
+		<dict>
+			<key>Channels</key>
+			<integer>0</integer>
+		</dict>
 		<key>Mobile</key>
 		<true/>
 		<key>PlatformFeature</key>

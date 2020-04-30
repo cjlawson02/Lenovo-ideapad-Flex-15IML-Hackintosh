@@ -1,0 +1,37 @@
+
+Clover Installer r5114 (v1.1.2), 2020-04-26 07:09:51
+macOS Version 10.15.4 (Build 19E287)
+SELF = /Applications/Clover.app/Contents/MacOS/CloverDaemonNew
+Backup made at:
+/Users/chris2fourlaw/Desktop/CloverBackUp/Samsung SSD 850 EVO 500GB Media/r5108_2020-04-26_07-09-43/EFI.
+Target volume: /Volumes/EFI
+BSD Name:      disk1s1
+Filesystem:    FAT32
+Is internal:   true
+Is writable:   true
+
+Installing/Updating Clover:
++ ../BOOT/BOOTX64.efi
++ ../CLOVER/CLOVERX64.efi
+
+Installing/Updating drivers:
+- ../BIOS/AudioDxe.efi
+- ../BIOS/FSInject.efi
+- ../BIOS/SMCHelper.efi
+- ../BIOS/XhciDxe.efi
+- ../BIOS/ApfsDriverLoader.efi
++ ../UEFI/AudioDxe.efi
++ ../UEFI/DataHubDxe.efi
++ ../UEFI/FSInject.efi
++ ../UEFI/SMCHelper.efi
++ ../UEFI/ApfsDriverLoader.efi
++ ../UEFI/VBoxHfs.efi
++ ../UEFI/AptioMemoryFix.efi
+
+Installing/Updating tools:
++ ../tools/Shell64.efi
++ ../tools/bdmesg.efi
++ ../tools/Shell64U.efi
++ ../tools/Shell32.efi
+
+Installing/Updating docs:

@@ -361,6 +361,13 @@
 				<data>AQAAAA==</data>
 				<key>framebuffer-con1-has-lspcon</key>
 				<data>AQAAAA==</data>
+				<key>igfxfw</key>
+				<data>AgAAAA==</data>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x14,0x0)</key>
+			<dict>
+				<key>acpi-wake-type</key>
+				<data>AQ==</data>
 			</dict>
 		</dict>
 		<key>Delete</key>
@@ -478,6 +485,22 @@
 				<key>MinKernel</key>
 				<string></string>
 				<key>ExecutablePath</key>
+				<string>Contents/MacOS/BT4LEContinuityFixup</string>
+				<key>BundlePath</key>
+				<string>BT4LEContinuityFixup.kext</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string></string>
+				<key>MaxKernel</key>
+				<string></string>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
+				<key>Enabled</key>
+				<true/>
+				<key>MinKernel</key>
+				<string></string>
+				<key>ExecutablePath</key>
 				<string></string>
 				<key>BundlePath</key>
 				<string>BrcmBluetoothInjector.kext</string>
@@ -494,9 +517,9 @@
 				<key>MinKernel</key>
 				<string></string>
 				<key>ExecutablePath</key>
-				<string>Contents/MacOS/BrcmFirmwareRepo</string>
+				<string>Contents/MacOS/BrcmFirmwareData</string>
 				<key>BundlePath</key>
-				<string>BrcmFirmwareRepo.kext</string>
+				<string>BrcmFirmwareData.kext</string>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -590,9 +613,9 @@
 				<key>MinKernel</key>
 				<string></string>
 				<key>ExecutablePath</key>
-				<string>Contents/MacOS/NoTouchID</string>
+				<string>Contents/MacOS/HibernationFixup</string>
 				<key>BundlePath</key>
-				<string>NoTouchID.kext</string>
+				<string>HibernationFixup.kext</string>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -606,9 +629,9 @@
 				<key>MinKernel</key>
 				<string></string>
 				<key>ExecutablePath</key>
-				<string></string>
+				<string>Contents/MacOS/NoTouchID</string>
 				<key>BundlePath</key>
-				<string>SATA-unsupported.kext</string>
+				<string>NoTouchID.kext</string>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -670,9 +693,9 @@
 				<key>MinKernel</key>
 				<string></string>
 				<key>ExecutablePath</key>
-				<string></string>
+				<string>Contents/MacOS/USBInjectAll</string>
 				<key>BundlePath</key>
-				<string>USBMap.kext</string>
+				<string>USBInjectAll.kext</string>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -1141,7 +1164,7 @@
 		<key>Generic</key>
 		<dict>
 			<key>AdviseWindows</key>
-			<false/>
+			<true/>
 			<key>MLB</key>
 			<string>C02802102J9JH4R1H</string>
 			<key>ROM</key>

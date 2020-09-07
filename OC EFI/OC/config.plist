@@ -88,7 +88,8 @@
 			</dict>
 		</array>
 		<key>Delete</key>
-		<array/>
+		<array>
+		</array>
 		<key>Patch</key>
 		<array>
 			<dict>
@@ -369,7 +370,8 @@
 	<key>Booter</key>
 	<dict>
 		<key>MmioWhitelist</key>
-		<array/>
+		<array>
+		</array>
 		<key>Quirks</key>
 		<dict>
 			<key>AvoidRuntimeDefrag</key>
@@ -511,7 +513,7 @@
 				<key>Comment</key>
 				<string></string>
 				<key>MaxKernel</key>
-				<string></string>
+				<string>19.9.9</string>
 				<key>PlistPath</key>
 				<string>Contents/Info.plist</string>
 				<key>Enabled</key>
@@ -995,7 +997,8 @@
 			</dict>
 		</array>
 		<key>Block</key>
-		<array/>
+		<array>
+		</array>
 		<key>Emulate</key>
 		<dict>
 			<key>Cpuid1Data</key>
@@ -1137,7 +1140,8 @@
 	<key>Misc</key>
 	<dict>
 		<key>BlessOverride</key>
-		<array/>
+		<array>
+		</array>
 		<key>Boot</key>
 		<dict>
 			<key>ConsoleAttributes</key>
@@ -1221,18 +1225,12 @@
 			<string>Default</string>
 			<key>Vault</key>
 			<string>Optional</string>
-			<key>ApECID</key>
-			<integer>0</integer>
-			<key>DmgLoading</key>
-			<string>Signed</string>
 			<key>EnablePassword</key>
 			<false/>
 			<key>PasswordHash</key>
 			<data></data>
 			<key>PasswordSalt</key>
 			<data></data>
-			<key>SecureBootModel</key>
-			<string>Default</string>
 		</dict>
 		<key>Tools</key>
 		<array>
@@ -1488,10 +1486,6 @@
 			<false/>
 			<key>UnicodeCollation</key>
 			<false/>
-			<key>AppleImg4Verification</key>
-			<false/>
-			<key>AppleSecureBoot</key>
-			<false/>
 		</dict>
 		<key>Quirks</key>
 		<dict>
@@ -1511,7 +1505,8 @@
 			<false/>
 		</dict>
 		<key>ReservedMemory</key>
-		<array/>
+		<array>
+		</array>
 	</dict>
 </dict>
 </plist>

@@ -88,8 +88,7 @@
 			</dict>
 		</array>
 		<key>Delete</key>
-		<array>
-		</array>
+		<array/>
 		<key>Patch</key>
 		<array>
 			<dict>
@@ -370,8 +369,7 @@
 	<key>Booter</key>
 	<dict>
 		<key>MmioWhitelist</key>
-		<array>
-		</array>
+		<array/>
 		<key>Quirks</key>
 		<dict>
 			<key>AvoidRuntimeDefrag</key>
@@ -1018,8 +1016,7 @@
 			</dict>
 		</array>
 		<key>Block</key>
-		<array>
-		</array>
+		<array/>
 		<key>Emulate</key>
 		<dict>
 			<key>Cpuid1Data</key>
@@ -1134,6 +1131,8 @@
 			<false/>
 			<key>ForceSecureBootScheme</key>
 			<false/>
+			<key>SetApfsTrimTimeout</key>
+			<integer>-1</integer>
 		</dict>
 		<key>Force</key>
 		<array>
@@ -1171,8 +1170,7 @@
 	<key>Misc</key>
 	<dict>
 		<key>BlessOverride</key>
-		<array>
-		</array>
+		<array/>
 		<key>Boot</key>
 		<dict>
 			<key>ConsoleAttributes</key>
@@ -1182,7 +1180,7 @@
 			<key>HideAuxiliary</key>
 			<false/>
 			<key>PickerAttributes</key>
-			<integer>1</integer>
+			<integer>17</integer>
 			<key>PickerAudioAssist</key>
 			<false/>
 			<key>PickerMode</key>
@@ -1196,7 +1194,11 @@
 			<key>Timeout</key>
 			<integer>5</integer>
 			<key>PickerVariant</key>
-			<string>Auto</string>
+			<string>Modern</string>
+			<key>LauncherOption</key>
+			<string>Short</string>
+			<key>LauncherPath</key>
+			<string>Default</string>
 		</dict>
 		<key>Debug</key>
 		<dict>
@@ -1244,8 +1246,6 @@
 			<true/>
 			<key>AuthRestart</key>
 			<false/>
-			<key>BootProtect</key>
-			<string>Bootstrap</string>
 			<key>ExposeSensitiveData</key>
 			<integer>6</integer>
 			<key>HaltLevel</key>
@@ -1394,6 +1394,8 @@
 			<string>Auto</string>
 			<key>ProcessorType</key>
 			<integer>0</integer>
+			<key>MaxBIOSVersion</key>
+			<false/>
 		</dict>
 		<key>UpdateDataHub</key>
 		<true/>
@@ -1404,6 +1406,8 @@
 		<key>UpdateSMBIOSMode</key>
 		<string>Create</string>
 		<key>CustomMemory</key>
+		<false/>
+		<key>UseRawUuidEncoding</key>
 		<false/>
 	</dict>
 	<key>UEFI</key>
@@ -1551,10 +1555,11 @@
 			<integer>0</integer>
 			<key>UnblockFsConnect</key>
 			<false/>
+			<key>DisableSecurityPolicy</key>
+			<false/>
 		</dict>
 		<key>ReservedMemory</key>
-		<array>
-		</array>
+		<array/>
 	</dict>
 </dict>
 </plist>
